@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 	double **r, **q, **a, mysum;
 
 	FILE* in;
-	in = fopen("mat.txt", "r");
+	in = fopen("mat_10000.txt", "r");
 	
 	fscanf(in, "%d%d", &m, &n);
 
@@ -30,6 +30,7 @@ int main(int argc, char *argv[]) {
 	clock_t start_time = clock();
 
 	for (k = 0; k < n; k++){
+		// printf("%d\n", k);
 		r[k][k] = 0; // equivalent to sum = 0
 		mysum = 0;
 		

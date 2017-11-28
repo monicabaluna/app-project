@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 	int num_threads = omp_get_max_threads();
 
 	FILE* in;
-	in = fopen("mat_1000.txt", "r");
+	in = fopen("mat_10000.txt", "r");
 	
 	fscanf(in, "%d%d", &m, &n);
 
